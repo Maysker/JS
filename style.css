@@ -112,3 +112,13 @@ h1 {
     color: #333; 
     font-size: 0.8em; 
 }
+
+.header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.header h1 a:hover {
+    text-decoration: none;
+}
