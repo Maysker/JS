@@ -53,6 +53,7 @@ body {
     box-sizing: border-box;
     display: none;
     background-color: #219ebc;
+    border-radius: 10px;
 
 }
 
@@ -97,7 +98,7 @@ h1 {
 }
 .footer {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background-color: #f2f2f2; 
     text-align: center;
     position: absolute;
@@ -110,7 +111,8 @@ h1 {
     margin: 0;
     padding: 5px;
     color: #333; 
-    font-size: 0.8em; 
+    font-size: 0.8em;
+     
 }
 
 .header h1 a {
@@ -121,4 +123,35 @@ h1 {
 
 .header h1 a:hover {
     text-decoration: none;
+}
+
+ /* For chart */
+ .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    height: 50vh;
+    width: 50vw;
+    box-sizing: border-box;   
+}
+
+/* Media query for small screens, such as smartphones */
+@media (max-width: 600px) {
+    .chart-container {
+        min-height: 300px; /* Minimum height for small screens */
+        width: 100%;       /* Chart will take up the full width of the screen */
+        margin-top: 20px;  /* Adjusted top margin for small screens */
+    }
+}
+
+/* Media query for medium screens, such as tablets */
+@media (max-width: 768px) {
+    .chart-container {
+        min-height: 400px; /* Increased minimum height for medium screens */
+        width: 80%;        /* Slightly smaller width to leave space on the sides */
+        margin-top: 30px;  /* Adjusted top margin for medium screens */
+    }
 }
